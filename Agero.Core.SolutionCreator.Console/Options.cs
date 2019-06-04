@@ -1,6 +1,5 @@
-﻿using System;
+﻿using CommandLine;
 using System.IO;
-using CommandLine;
 
 namespace Agero.Core.SolutionCreator.Console
 {
@@ -12,7 +11,7 @@ namespace Agero.Core.SolutionCreator.Console
             CompanyName = companyName;
             ApplicationName = applicationName;
             TemplateDirectoryPath = templateDirectoryPath;
-            OutputDestination = outputDestination ?? Path.Combine(Directory.GetCurrentDirectory(), DateTime.Now.ToString("yyyyMMddhhmmss"));
+            OutputDestination = outputDestination ?? Directory.GetCurrentDirectory();
             ApplicationNamePlaceHolder = applicationNamePlaceHolder ?? DEFAULT_APPLICATION_NAME_PLACEHOLDER;
             CompanyNamePlaceHolder = companyNamePlaceHolder ?? DEFAULT_COMPANY_NAME_PLACEHOLDER;
         }

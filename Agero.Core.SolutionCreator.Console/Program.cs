@@ -32,14 +32,16 @@ namespace Agero.Core.SolutionCreator.Console
             Check.ArgumentIsNull(options.ApplicationNamePlaceHolder, nameof(options.ApplicationNamePlaceHolder));
             Check.ArgumentIsNull(options.CompanyNamePlaceHolder, nameof(options.CompanyNamePlaceHolder));
 
-            if (!Directory.Exists(options.OutputDestination))
-                Directory.CreateDirectory(options.OutputDestination);
+            var outputDirectoryPath = Path.Combine(options.OutputDestination, DateTime.Now.ToString("yyyyMMddhhmmss"));
 
-            FileHelper.CopyDirectory(options.TemplateDirectoryPath, options.OutputDestination);
-            FileHelper.ReplaceNameAndTextInDirectoriesAndFiles(options.OutputDestination, options.CompanyNamePlaceHolder, options.CompanyName);
-            FileHelper.ReplaceNameAndTextInDirectoriesAndFiles(options.OutputDestination, options.ApplicationNamePlaceHolder, options.ApplicationName);
+            if (!Directory.Exists(outputDirectoryPath))
+                Directory.CreateDirectory(outputDirectoryPath);
 
-            WriteLine($"Solution created at {options.OutputDestination}.");
+            FileHelper.CopyDirectory(options.TemplateDirectoryPath, outputDirectoryPath);
+            FileHelper.ReplaceNameAndTextInDirectoriesAndFiles(outputDirectoryPath, options.CompanyNamePlaceHolder, options.CompanyName);
+            FileHelper.ReplaceNameAndTextInDirectoriesAndFiles(outputDirectoryPath, options.ApplicationNamePlaceHolder, options.ApplicationName);
+
+            WriteLine($"Solution created at {outputDirectoryPath}.");
         }
     }
 }

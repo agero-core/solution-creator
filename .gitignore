@@ -11,3 +11,5 @@ obj/
 *.user
 *.vspscc
 *.DotSettings
+/dist/netcoreapp2.2/SolutionCreator.runtimeconfig.dev.json
+/test

@@ -2,7 +2,7 @@
   "profiles": {
     "Agero.Core.SolutionCreator.Console": {
       "commandName": "Project",
-      "commandLineArgs": "Agero TestAPI template -d output -a APP___NAME -c COM__NAME"
+      "commandLineArgs": "TestCompany TestApplication ../../../../template -d ../../../../test -c COMP__NAME -a APP__NAME"
     }
   }
 }
