@@ -6,14 +6,15 @@
     <Version>1.0.0</Version>
     <Authors>Core Automation Team</Authors>
     <Company>Agero Inc.</Company>
-    <Copyright>Copyright © Agero 2019</Copyright>
-    <Product>Initial Solution Creator</Product>
-    <Title>Initial Solution Creator</Title>
+    <Copyright>Copyright (C) Agero 2019</Copyright>
+    <Product>Solution Creator</Product>
+    <Title>Solution Creator</Title>
     <AssemblyName>SolutionCreator</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Agero.Core.Checker" Version="1.0.11" />
+    <PackageReference Include="CommandLineParser" Version="2.5.0" />
   </ItemGroup>
 
 </Project>

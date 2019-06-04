@@ -3,7 +3,7 @@ using Agero.Core.Checker;
 
 namespace Agero.Core.SolutionCreator.Console
 {
-    public static class FileHelper
+    internal static class FileHelper
     {
         public static void CopyDirectory(string source, string destination)
         {
