@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>netcoreapp2.2;net472</TargetFrameworks>
+    <Version>1.0.0</Version>
+    <Authors>Core Automation Team</Authors>
+    <Company>Agero Inc.</Company>
+    <Copyright>Copyright (C) Agero 2019</Copyright>
+    <Product>Solution Creator</Product>
+    <Title>Solution Creator</Title>
+    <AssemblyName>SolutionCreator</AssemblyName>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\dist\</OutputPath>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Agero.Core.Checker" Version="1.0.11" />
+    <PackageReference Include="CommandLineParser" Version="2.5.0" />
+  </ItemGroup>
+
+</Project>

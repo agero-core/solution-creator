@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Agero.Core.SolutionCreator.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "TestCompany TestApplication ../../../../template -d ../../../../test -c COMP__NAME -a APP__NAME"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+Company Name: COMP__NAME
+Application Name: APP__NAME
