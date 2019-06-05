@@ -8,7 +8,8 @@ Solution Creator is a tool for creating solutions from templates by replacing pl
 3. Create template of directories and files and use placeholder for **company name** and **application name**. Look at example in [template](./template) directory which uses **COMP__NAME** and **APP__NAME** placeholders.
 4. Run **Solution Creator** using the following command:
 ```
-SolutionCreator company_name app_name template_dir_path [-d output_destination] [-c comp_name_placeholder] [-a app_name_placeholder]
+SolutionCreator company_name app_name template_dir_path [-d output_destination] 
+				[-c comp_name_placeholder] [-a app_name_placeholder]
 ```
 
 **.NET Core Example:**
